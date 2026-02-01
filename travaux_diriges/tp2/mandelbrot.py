@@ -68,4 +68,8 @@ deb = time()
 image = Image.fromarray(np.uint8(matplotlib.cm.plasma(convergence.T)*255))
 fin = time()
 print(f"Temps de constitution de l'image : {fin-deb}")
-image.show()
+
+# image.show()
+
+image.save("mandelbrot.png")
+print("saved mandelbrot.png")
